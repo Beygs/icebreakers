@@ -8,38 +8,43 @@
   <title>IceBreakers</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
-    <div class="container-fluid ">
-      <!-- <a class="navbar-brand" href="#">
-        <img src="./images/icebreakers.svg" alt="" width="100" height="100" class="d-inline-block align-text-top">
-        IceBreakers
-      </a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">
-          <img class="d-inline-block align-center" src="./images/icebreakers.svg" alt="" width="100" height="100" class="d-inline-block align-text-top">
-          <span>IceBreakers</span>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand d-flex align-items-center md-1">
+          <img width="100px" height="100px" src="./images/icebreakers.svg" alt="IceBreakers Logo">
         </a>
-        <ul class="navbar-nav me-auto mb-4 mb-lg-0">
-          <div class="line-divider"></div>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Qui sommes nous ?</a>
-          </li>
-          <div class="line-divider"></div>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Les membres du groupe</a>
-          </li>
-          <div class="line-divider"></div>
-          <li class="nav-item">
-            <a class="nav-link">Contactez-nous !</a>
-          </li>
-          <div class="line-divider line-divider-end"></div>
-        </ul>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav align-items-center justify-content-start" >
+            <li class="nav-item"><a href="/" class="nav-link link-primary">IceBreakers</a></li>
+            <li style="width: 5vw" class="line d-inline-block border border-1 border-info"></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Qui sommes-nous ?</a></li>
+            <li style="width: 5vw" class="line d-inline-block border border-1 border-info"></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Membres du groupe</a></li>
+            <li style="width: 5vw" class="line d-inline-block border border-1 border-info"></li>
+            <li class="nav-item"><a href="#" class="nav-link link-secondary">Contactez-nous !</a></li>
+          </ul>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end collapse" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header text-center">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IceBreakers</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+              <li class="nav-item"><a href="#" class="nav-link link-secondary">Qui sommes-nous ?</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-secondary">Membres du groupe</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-secondary">Contactez-nous !</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <div class="container">
     <div class="main">
 
