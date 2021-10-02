@@ -11,8 +11,6 @@ Page de présentation du groupe de travail IceBreakers de THP.
 
 ## Auteurs
 
-Ophélie - [GitHub](https://www.github.com/ophelie-gaudin)
-
-Pierre - [GitHub](https://www.github.com/MidNightRoad)
-
-Boris - [GitHub](https://www.github.com/Beygs)
+Ophélie | Pierre | Boris
+--------|--------|--------
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/ophelie-gaudin)|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/MidNightRoad)|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/Beygs)
