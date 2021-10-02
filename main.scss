@@ -13,8 +13,14 @@ $font-family-base: $font-family-code;
 
 $headings-font-family: $font-family-sans-serif;
 
+$font-size-root: 16px;
+
 a {
   font-family: $font-family-sans-serif;
+}
+
+.nav-item {
+  z-index: 1;
 }
 
 @import "./node_modules/bootstrap/scss/variables";
@@ -32,5 +38,15 @@ $custom-spacers: (
 );
 
 $spacers: map-merge($spacers, $custom-spacers);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  ct: 1022px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 @import "./node_modules/bootstrap/scss/bootstrap";
