@@ -1,17 +1,23 @@
+@import "./node_modules/bootstrap/scss/functions";
+
 $primary: #8281D1;
 $secondary: #50A6EC;
+$blue-line: #5CE1E6;
 
-
-@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/root";
 
 $custom-colors: (
-  "line": #5CE1E6
+    "blue-line": $blue-line,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-$custom-spacer: (
-  6: $spacer * 4
+$custom-spacers: (
+  "6": $spacer * 7
 );
 
-$spacers: map-merge($spacers, $custom-spacer);
+$spacers: map-merge($spacers, $custom-spacers);
+
+@import "./node_modules/bootstrap/scss/bootstrap";
