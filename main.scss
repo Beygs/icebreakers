@@ -1,0 +1,11 @@
+$primary: #8281D1;
+$secondary: #50A6EC;
+
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+$custom-colors: (
+  "line": #5CE1E6
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
