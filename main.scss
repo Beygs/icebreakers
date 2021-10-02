@@ -9,3 +9,9 @@ $custom-colors: (
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+$custom-spacer: (
+  6: $spacer * 4
+);
+
+$spacers: map-merge($spacers, $custom-spacer);
