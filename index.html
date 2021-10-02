@@ -9,19 +9,20 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="/" class="navbar-brand d-flex align-items-center md-1">
-          <img width="100px" height="100px" src="./images/icebreakers.svg" alt="IceBreakers Logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid d-flex justify-content-end pt-2 pb-2">
+        <a href="/" class="navbar-brand position-absolute start-0 top-0">
+          <img width="100px" height="89px" src="./images/icebreakers.svg" alt="IceBreakers Logo">
         </a>
-        <div class="collapse navbar-collapse">
+        <!--TODO : Ajouter spacing 6 au thème-->
+        <div class="collapse navbar-collapse ms-6">
           <ul class="navbar-nav align-items-center justify-content-start" >
             <li class="nav-item"><a href="/" class="nav-link link-primary">IceBreakers</a></li>
-            <li style="width: 5vw" class="line d-inline-block border border-1 border-info"></li>
+            <li style="width: 5vw" class="line d-inline-block border-top border-1"></li>
             <li class="nav-item"><a href="#" class="nav-link link-secondary">Qui sommes-nous ?</a></li>
-            <li style="width: 5vw" class="line d-inline-block border border-1 border-info"></li>
+            <li style="width: 5vw" class="line d-inline-block border-top border-1"></li>
             <li class="nav-item"><a href="#" class="nav-link link-secondary">Membres du groupe</a></li>
-            <li style="width: 5vw" class="line d-inline-block border border-1 border-info"></li>
+            <li style="width: 5vw" class="line d-inline-block border-top border-1"></li>
             <li class="nav-item"><a href="#" class="nav-link link-secondary">Contactez-nous !</a></li>
           </ul>
         </div>
@@ -31,11 +32,11 @@
         </button>
         <div class="offcanvas offcanvas-end collapse" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header text-center">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IceBreakers</h5>
+            <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">IceBreakers</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item"><a href="#" class="nav-link link-secondary">Qui sommes-nous ?</a></li>
               <li class="nav-item"><a href="#" class="nav-link link-secondary">Membres du groupe</a></li>
               <li class="nav-item"><a href="#" class="nav-link link-secondary">Contactez-nous !</a></li>
