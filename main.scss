@@ -55,21 +55,16 @@ $grid-breakpoints: (
   width: 100vw;
   height: 100vh;
   background: white;
-  animation: load 6s forwards;
+  animation: load 2s forwards 4s ease;
 }
 
 @keyframes load {
-  75% {
+  from {
     background: white;
   }
   
-  99% {
-    display: block;
+  to {
     background: transparent;
-  }
-
-  100% {
-    display: none;
   }
 }
 
@@ -86,7 +81,7 @@ $grid-breakpoints: (
   stroke-width: 2px;
   stroke-dasharray: 2400;
   stroke-dashoffset: 2400;
-  animation: animate 6s forwards;
+  animation: animate 6s forwards ease-in-out;
 }
 
 @keyframes animate {
