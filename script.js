@@ -1,8 +1,8 @@
 const counterSpan = document.getElementById("counter");
+const loadingScreen = document.querySelector(".loading-bg");
+const mainContent = document.querySelector(".main");
 
 const startDate = new Date(2021, 8, 27, 9).getTime();
-
-console.log(startDate);
 
 const counter = () => {
   const counterTime = Date.now() - startDate;
@@ -15,3 +15,7 @@ const counter = () => {
 }
 
 counter();
+
+setTimeout(() => mainContent.setAttribute("style", "display: block"), 4000)
+
+setTimeout(() => loadingScreen.remove(), 6000);

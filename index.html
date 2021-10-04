@@ -15,17 +15,33 @@
     <title>IceBreakers</title>
   </head>
   <body>
+    <div class="loading-bg"></div>
+
+    <a href="/" class="icebreakers-logo">
+      <svg class="icebreakers-logo" data-name="Calque 1"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 803.5 596">
+
+        <path class="cls-1" d="M251.5,462.5v.77C251.43,462.47,251.5,462.13,251.5,462.5Z" transform="translate(19 -116)"/>
+        <path class="cls-1" d="M284.5,416.78v23.08a16.48,16.48,0,0,1-16.07,16.51H268c-7.25.06-11.38-3.09-13.69-6.26a15.28,15.28,0,0,1-2.81-9V414.5s3-12,17-12a31.38,31.38,0,0,1,3.49.18A14.14,14.14,0,0,1,284.5,416.78Z" transform="translate(19 -116)"/>
+        <path class="cls-1" d="M468.1,307.14,429,229l-53-11L297,116l-59,70-68,30-44.85,91.14H-.5L-19,305-.5,318.22l124-.72,63,94L218,550l34.5-26.5L302,712l28.5-102.5L351,639l51-164,40-24,37-133,241,.15V307ZM311.5,447a33.41,33.41,0,0,1-4.34,16.73c-4.32,7.47-12.71,15.77-28.66,15.77-23.69,0-26.69-12.68-27-16.23V477.5l-27,.24V348.5h27.68v47.76s11.69-31.74,48.32-9.76c10,6,11,21,11,26ZM138.9,307.14,179,225l68-30,51-62,5,88-53,50,85-27,24.75,63.14ZM422.5,424.5h-29c0-8-1-24-17-24s-15,17.77-15,17.77V477.5h-27v-98h27s0,3,0,15.54c0,.46,3-16.54,27-16.54C428.5,378.5,422.5,424.5,422.5,424.5Z" transform="translate(19 -116)"/>
+        <path class="cls-1" d="M251.5,462.5v.77C251.43,462.47,251.5,462.13,251.5,462.5Z" transform="translate(19 -116)"/>
+        <path class="cls-1" d="M284.5,416.78v23.08a16.48,16.48,0,0,1-16.07,16.51H268c-7.25.06-11.38-3.09-13.69-6.26a15.28,15.28,0,0,1-2.81-9V414.5s3-12,17-12a31.38,31.38,0,0,1,3.49.18A14.14,14.14,0,0,1,284.5,416.78Z" transform="translate(19 -116)"/>
+        <path class="cls-1" d="M362.5,416.5" transform="translate(19 -116)"/>
+        <path class="cls-1" d="M284.5,416.78v23.08a16.48,16.48,0,0,1-16.07,16.51H268c-7.25.06-11.38-3.09-13.69-6.26a15.28,15.28,0,0,1-2.81-9V414.5s3-12,17-12a31.38,31.38,0,0,1,3.49.18A14.14,14.14,0,0,1,284.5,416.78Z" transform="translate(19 -116)"/>
+        <polygon class="cls-1" points="170.5 257.5 170.5 280.41 107.5 303.5 170.5 326.27 170.5 350.12 91.5 315.5 91.5 291.88 170.5 257.5"/>
+        <polygon class="cls-1" points="572.5 215.5 598.77 215.5 538.5 380.5 511.64 380.5 572.5 215.5"/>
+        <polygon class="cls-1" points="621.5 257.5 621.5 279.95 684.5 304.5 621.5 327.42 621.5 350.81 700.5 316.5 700.5 291.65 621.5 257.5"/>
+        <polygon class="cls-1" points="754.5 191.5 754.5 201.84 803.5 201.5 803.5 191.5 754.5 191.5"/>
+      </svg>
+    </a>
+
     <header>
       <nav class="navbar navbar-expand-ct navbar-light">
         <div class="container-fluid d-flex justify-content-end pt-2 pb-2">
-          <a href="/" class="navbar-brand position-absolute start-0 top-0">
-            <img width="120px" height="104px" src="./images/icebreakers.svg" alt="IceBreakers Logo">
-          </a>
-
           <div class="collapse navbar-collapse ms-6">
             <div class="container-fluid">
               <ul class="navbar-nav align-items-center justify-content-start" >
-                <li style="width: 100%" class="line d-inline-block position-absolute border border-1 border-blue-line bg-blue-line end-0"></li>
+                <li class="line d-inline-block position-absolute border border-1 border-blue-line bg-blue-line end-0"></li>
                 <li class="nav-item"><div class="bg-white pe-2"><a href="/" class="nav-link link-primary text-primary fs-4">IceBreakers</a></div></li>
                 <li class="nav-item"><div class="bg-white ps-2 pe-2 ms-5"><a href="#" class="nav-link link-secondary text-secondary">Qui sommes-nous ?</a></div></li>
                 <li class="nav-item"><div class="bg-white ps-2 pe-2 ms-5"><a href="#" class="nav-link link-secondary text-secondary">Membres du groupe</a></div></li>
@@ -53,7 +69,7 @@
         </div>
       </nav>
     </header>
-    <div class="main">
+    <div class="main" style="display: none">
       <div class="container mx-auto" style="width: auto ; max-width: 1500vh;
             background-image: url(https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);background-size: cover;
             background-repeat: no-repeat; background-position:center ;" >
@@ -69,273 +85,274 @@
             </div>
           </div>
         </section>
-    </div>
-    <div class="container-fluid">
+      </div>
+      <div class="container-fluid">
 
-      <!-- Members section-->
-      <section
-        id="members-section"
-        class="d-flex flex-column align-items-center position-relative border-top"
-        style="margin: 0% 5%"
-      >
-        <hr class="color-primary" />
-        <h2 class="text-primary text-center">Membres du groupe</h2>
-
-        <div
-          class="
-            left-card
-            d-flex
-            col-12
-            flex-wrap
-            justify-content-center
-            align-items-center
-            ml-md-0
-          "
+        <!-- Members section-->
+        <section
+          id="members-section"
+          class="d-flex flex-column align-items-center position-relative border-top"
+          style="margin: 0% 5%"
         >
-          <!-- Pb avec la classe ml-md-0 qui ne marche pas = à appliquer à toutes les margin left des div img -->
-          <div
-            class="col-12 col-lg-1 rounded-circle"
-            style="
-              margin: 3em;
-              background-image: url(./images/avatar-ben.png);
-              width: 120px;
-              height: 120px;
-              background-size: cover;
-            "
-          ></div>
-
-          <div>
-            <div class="d-flex col-8 align-items-center mb-1">
-              <h3 class="h4 m-0">Ben</h3>
-              <a href="#link-to-personal-github"
-                ><i
-                  class="fa-brands fa-github fa-2x"
-                  style="margin-left: 2em; color: black"
-                ></i
-              ></a>
-            </div>
-            <p style="max-width: 700px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
-              accusamus placeat possimus.
-            </p>
-          </div>
-
-          <div class="col-2" style="margin: 3em; margin-left: 0"></div>
-        </div>
-
-        <div
-          class="
-            right-card
-            d-flex
-            col-12
-            align-items-center
-            flex-lg-row-reverse
-            justify-content-lg-start justify-content-center
-            align-items-center
-            flex-wrap
-            mr-md-0
-          "
-        >
-          <!-- Pb avec la classe mr-md-0 qui ne marche pas = à appliquer à toutes les margin right des div img -->
+          <hr class="color-primary" />
+          <h2 class="text-primary text-center">Membres du groupe</h2>
 
           <div
-            class="col-2 col-lg-1 rounded-circle"
-            style="
-              margin: 3em;
-              background-image: url(./images/avatar-boris.jpg);
-              width: 120px;
-              height: 120px;
-              background-size: cover;
+            class="
+              left-card
+              d-flex
+              col-12
+              flex-wrap
+              justify-content-center
+              align-items-center
+              ml-md-0
             "
-          ></div>
+          >
+            <!-- Pb avec la classe ml-md-0 qui ne marche pas = à appliquer à toutes les margin left des div img -->
+            <div
+              class="col-12 col-lg-1 rounded-circle"
+              style="
+                margin: 3em;
+                background-image: url(./images/avatar-ben.png);
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+              "
+            ></div>
 
-          <div>
-            <div class="d-flex col-8 align-items-center mb-1">
-              <h3 class="h4 m-0">Boris</h3>
-              <a href="#link-to-personal-github"
-                ><i
-                  class="fa-brands fa-github fa-2x"
-                  style="margin-left: 2em; color: black"
-                ></i
-              ></a>
+            <div>
+              <div class="d-flex col-8 align-items-center mb-1">
+                <h3 class="h4 m-0">Ben</h3>
+                <a href="#link-to-personal-github"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-left: 2em; color: black"
+                  ></i
+                ></a>
+              </div>
+              <p style="max-width: 700px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
+                accusamus placeat possimus.
+              </p>
             </div>
-            <p style="max-width: 700px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
-              accusamus placeat possimus.
-            </p>
-          </div>
-          <div class="col-2" style="margin: 3em; margin-right: 0"></div>
-        </div>
 
-        <div
-          class="
-            left-card
-            d-flex
-            col-12
-            flex-wrap
-            justify-content-center
-            align-items-center
-          "
-        >
+            <div class="col-2" style="margin: 3em; margin-left: 0"></div>
+          </div>
+
           <div
-            class="col-2 col-lg-1 rounded-circle"
-            style="
-              margin: 3em;
-              background-image: url(./images/avatar-ophelie.jpg);
-              width: 120px;
-              height: 120px;
-              background-size: cover;
+            class="
+              right-card
+              d-flex
+              col-12
+              align-items-center
+              flex-lg-row-reverse
+              justify-content-lg-start justify-content-center
+              align-items-center
+              flex-wrap
+              mr-md-0
             "
-          ></div>
+          >
+            <!-- Pb avec la classe mr-md-0 qui ne marche pas = à appliquer à toutes les margin right des div img -->
 
-          <div>
-            <div class="d-flex col-8 col-lg-1 align-items-center mb-1">
-              <h3 class="h4 m-0">Ophélie</h3>
-              <a href="https://github.com/ophelie-gaudin"
-                ><i
-                  class="fa-brands fa-github fa-2x"
-                  style="margin-left: 2em; color: black"
-                ></i
-              ></a>
+            <div
+              class="col-2 col-lg-1 rounded-circle"
+              style="
+                margin: 3em;
+                background-image: url(./images/avatar-boris.jpg);
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+              "
+            ></div>
+
+            <div>
+              <div class="d-flex col-8 align-items-center mb-1">
+                <h3 class="h4 m-0">Boris</h3>
+                <a href="#link-to-personal-github"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-left: 2em; color: black"
+                  ></i
+                ></a>
+              </div>
+              <p style="max-width: 700px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
+                accusamus placeat possimus.
+              </p>
             </div>
-            <p style="max-width: 700px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
-              accusamus placeat possimus.
-            </p>
+            <div class="col-2" style="margin: 3em; margin-right: 0"></div>
           </div>
 
-          <div class="col-2" style="margin: 3em; margin-left: 0"></div>
-        </div>
-
-        <div
-          class="
-            right-card
-            d-flex
-            col-12
-            align-items-center
-            flex-lg-row-reverse
-            justify-content-lg-start justify-content-center
-            align-items-center
-            flex-wrap
-          "
-        >
           <div
-            class="col-2 col-lg-1 rounded-circle"
-            style="
-              margin: 3em;
-              background-image: url(./images/icebreakers.svg);
-              width: 120px;
-              height: 120px;
-              background-size: cover;
+            class="
+              left-card
+              d-flex
+              col-12
+              flex-wrap
+              justify-content-center
+              align-items-center
             "
-          ></div>
+          >
+            <div
+              class="col-2 col-lg-1 rounded-circle"
+              style="
+                margin: 3em;
+                background-image: url(./images/avatar-ophelie.jpg);
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+              "
+            ></div>
 
-          <div>
-            <div class="d-flex col-8 align-items-center mb-1">
-              <h3 class="h4 m-0">Pierre</h3>
-              <a href="#link-to-personal-github"
-                ><i
-                  class="fa-brands fa-github fa-2x"
-                  style="margin-left: 2em; color: black"
-                ></i
-              ></a>
+            <div>
+              <div class="d-flex col-8 col-lg-1 align-items-center mb-1">
+                <h3 class="h4 m-0">Ophélie</h3>
+                <a href="https://github.com/ophelie-gaudin"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-left: 2em; color: black"
+                  ></i
+                ></a>
+              </div>
+              <p style="max-width: 700px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
+                accusamus placeat possimus.
+              </p>
             </div>
-            <p style="max-width: 700px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
-              accusamus placeat possimus.
-            </p>
-          </div>
-          <div class="col-2" style="margin: 3em; margin-left: 0"></div>
-        </div>
 
-        <div
-          class="
-            left-card
-            d-flex
-            col-12
-            flex-wrap
-            justify-content-center
-            align-items-center
-          "
-        >
+            <div class="col-2" style="margin: 3em; margin-left: 0"></div>
+          </div>
+
           <div
-            class="col-2 col-lg-1 rounded-circle"
-            style="
-              margin: 3em;
-              background-image: url(./images/icebreakers.svg);
-              width: 120px;
-              height: 120px;
-              background-size: cover;
+            class="
+              right-card
+              d-flex
+              col-12
+              align-items-center
+              flex-lg-row-reverse
+              justify-content-lg-start justify-content-center
+              align-items-center
+              flex-wrap
             "
-          ></div>
+          >
+            <div
+              class="col-2 col-lg-1 rounded-circle"
+              style="
+                margin: 3em;
+                background-image: url(./images/icebreakers.svg);
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+              "
+            ></div>
 
-          <div>
-            <div class="d-flex col-8 align-items-center mb-1">
-              <h3 class="h4 m-0">Mariem</h3>
-              <a href="#link-to-personal-github"
-                ><i
-                  class="fa-brands fa-github fa-2x"
-                  style="margin-left: 2em; color: black"
-                ></i
-              ></a>
+            <div>
+              <div class="d-flex col-8 align-items-center mb-1">
+                <h3 class="h4 m-0">Pierre</h3>
+                <a href="#link-to-personal-github"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-left: 2em; color: black"
+                  ></i
+                ></a>
+              </div>
+              <p style="max-width: 700px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
+                accusamus placeat possimus.
+              </p>
             </div>
-            <p style="max-width: 700px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
-              accusamus placeat possimus.
-            </p>
+            <div class="col-2" style="margin: 3em; margin-left: 0"></div>
           </div>
 
-          <div class="col-2" style="margin: 3em; margin-left: 0"></div>
-        </div>
-
-        <div
-          class="
-            right-card
-            d-flex
-            col-12
-            align-items-center
-            flex-lg-row-reverse
-            justify-content-lg-start justify-content-center
-            align-items-center
-            flex-wrap
-          "
-        >
           <div
-            class="col-2 col-lg-1 rounded-circle"
-            style="
-              margin: 3em;
-              background-image: url(./images/avatar-evan.jpg);
-              width: 120px;
-              height: 120px;
-              background-size: cover;
-              background-position: center;
+            class="
+              left-card
+              d-flex
+              col-12
+              flex-wrap
+              justify-content-center
+              align-items-center
             "
-          ></div>
+          >
+            <div
+              class="col-2 col-lg-1 rounded-circle"
+              style="
+                margin: 3em;
+                background-image: url(./images/icebreakers.svg);
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+              "
+            ></div>
 
-          <div>
-            <div class="d-flex col-8 align-items-center mb-1">
-              <h3 class="h4 m-0">Evan</h3>
-              <a href="#link-to-personal-github"
-                ><i
-                  class="fa-brands fa-github fa-2x"
-                  style="margin-left: 2em; color: black"
-                ></i
-              ></a>
+            <div>
+              <div class="d-flex col-8 align-items-center mb-1">
+                <h3 class="h4 m-0">Mariem</h3>
+                <a href="#link-to-personal-github"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-left: 2em; color: black"
+                  ></i
+                ></a>
+              </div>
+              <p style="max-width: 700px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
+                accusamus placeat possimus.
+              </p>
             </div>
-            <p style="max-width: 700px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
-              accusamus placeat possimus.
-            </p>
+
+            <div class="col-2" style="margin: 3em; margin-left: 0"></div>
           </div>
-          <div class="col-2" style="margin: 3em; margin-left: 0"></div>
-        </div>
-      </section>
+
+          <div
+            class="
+              right-card
+              d-flex
+              col-12
+              align-items-center
+              flex-lg-row-reverse
+              justify-content-lg-start justify-content-center
+              align-items-center
+              flex-wrap
+            "
+          >
+            <div
+              class="col-2 col-lg-1 rounded-circle"
+              style="
+                margin: 3em;
+                background-image: url(./images/avatar-evan.jpg);
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+
+            <div>
+              <div class="d-flex col-8 align-items-center mb-1">
+                <h3 class="h4 m-0">Evan</h3>
+                <a href="#link-to-personal-github"
+                  ><i
+                    class="fa-brands fa-github fa-2x"
+                    style="margin-left: 2em; color: black"
+                  ></i
+                ></a>
+              </div>
+              <p style="max-width: 700px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus officiis nihil ratione quos quae nam ab asperiores,
+                accusamus placeat possimus.
+              </p>
+            </div>
+            <div class="col-2" style="margin: 3em; margin-left: 0"></div>
+          </div>
+        </section>
+      </div>
     </div>
     <footer>
 

@@ -44,9 +44,86 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  ct: 1022px,
+  ct: 1040px,
   xl: 1200px,
   xxl: 1400px
 );
+
+.loading-bg {
+  z-index: 998;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  animation: load 6s forwards;
+}
+
+@keyframes load {
+  75% {
+    background: white;
+  }
+  
+  99% {
+    display: block;
+    background: transparent;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+.icebreakers-logo {
+  width: 50%;
+  height: 50%;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: #5ce1e6;
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2400;
+  animation: animate 6s forwards;
+}
+
+@keyframes animate {
+  50% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  75% {
+    fill: #5ce1e6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    fill: #5ce1e6;
+    transform: translate(0, 0);
+    width: 120px;
+    height: 115px;
+  }
+}
+
+.line {
+  width: 0;
+  animation: lineAnimation 2s forwards 7s;
+}
+
+@keyframes lineAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 @import "./node_modules/bootstrap/scss/bootstrap";
